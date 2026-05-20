@@ -256,7 +256,7 @@ ol {
 	display: block;
 	height: 100%;
 	padding-top: 30px;
-	background: #323232;
+	background: #830707;
 	text-align: center;
 	cursor: pointer;
 }
@@ -268,7 +268,7 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #000;
+	background: #000000;
 	z-index: 99999;
 }
 
@@ -316,7 +316,7 @@ ol {
 -----------------------*/
 
 .header__top {
-	background: #182143;
+	background: #4a2c81;
 }
 
 .header__top__widget {
