@@ -538,97 +538,118 @@ ol {
 -----------------------*/
 
 .hero {
-	padding: 170px 0;
+    padding: 170px 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero__text {
-	padding-top: 90px;
-}
-
-.hero__text h2 {
-	font-size: 50px;
-	color: #ffffff;
-	font-weight: 700;
-	line-height: 60px;
-	margin-bottom: 65px;
-}
-
-.hero__text p {
-	color: #ffffff;
-	margin-bottom: 60px;
-}
-
-.hero__text .primary-btn {
-	margin-right: 16px;
-}
-
-.hero__text .primary-btn.howit-btn {
-	background: #223060;
-}
-
+/* FORM CONTAINER */
 .hero__form {
-	background: #ffffff;
-	padding: 50px 30px 45px;
-	border-radius: 2px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.15); /* transparencia */
+    backdrop-filter: blur(14px); /* difuminado */
+    -webkit-backdrop-filter: blur(14px);
+    
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+
+    padding: 50px 30px 45px;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 2;
 }
 
+/* capa extra para mejorar el glass effect */
+.hero__form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.389),
+            rgba(255, 255, 255, 0.344)
+        );
+
+    z-index: -1;
+}
+
+/* TITULO */
 .hero__form h3 {
-	color: #323232;
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: 24px;
+    color: rgba(34, 48, 96, 0.85);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 42px;
 }
 
+/* INPUTS */
 .hero__form form .input-list {
-	overflow: hidden;
-	margin-right: -20px;
+    overflow: hidden;
+    margin-right: -20px;
 }
 
 .hero__form form .input-list.last .input-list-item {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .hero__form form .input-list .input-list-item {
-	width: calc(50% - 20px);
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 20px;
+    width: calc(50% - 20px);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-.hero__form form .input-list .input-list-item p {
-	color: #323232;
-	margin-bottom: 12px;
-}
-
-.hero__form form .input-list .input-list-item input {
-	width: 100%;
-	height: 48px;
-	border-radius: 2px;
-	border: none;
-	background: #f6f6f6;
-	padding-left: 15px;
-}
-
-.hero__form form .input-full-width {
-	margin-bottom: 20px;
-}
-
+.hero__form form .input-list .input-list-item p,
 .hero__form form .input-full-width p {
-	color: #323232;
-	margin-bottom: 12px;
+    color: #1d1d1d;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
+/* INPUT STYLE */
+.hero__form form .input-list .input-list-item input,
 .hero__form form .input-full-width input {
-	width: 100%;
-	height: 48px;
-	border-radius: 2px;
-	border: none;
-	background: #f6f6f6;
-	padding-left: 15px;
+    width: 100%;
+    height: 52px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.3);
+
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(6px);
+
+    padding-left: 15px;
+    color: #111;
+    font-size: 16px;
 }
 
+/* FULL WIDTH */
+.hero__form form .input-full-width {
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
 .hero__form form button {
-	width: 100%;
+    width: 100%;
+    border: none;
+    padding: 18px;
+    border-radius: 8px;
+
+    background: rgba(34, 48, 96, 0.85);
+    color: #fff;
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease;
+}
+
+.hero__form form button:hover {
+    background: #223060;
+    transform: translateY(-2px);
 }
 
 /*---------------------
