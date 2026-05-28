@@ -113,7 +113,7 @@ ol {
 -----------------------*/
 
 .section-title {
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 
@@ -538,7 +538,7 @@ ol {
 -----------------------*/
 
 .hero {
-    padding: 170px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
 }
@@ -546,15 +546,15 @@ ol {
 /* FORM CONTAINER */
 .hero__form {
     position: relative;
-    background: rgba(255, 255, 255, 0.15); /* transparencia */
-    backdrop-filter: blur(14px); /* difuminado */
-    -webkit-backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.08); /* transparencia */
+    backdrop-filter: blur(18px); /* difuminado */
+    -webkit-backdrop-filter: blur(18px);
     
-    border: 1px solid rgba(255,255,255,0.25);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    border: 1px solid rgba(255,255,255,0.22);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.22);
 
     padding: 50px 30px 45px;
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
     z-index: 2;
 }
@@ -568,8 +568,8 @@ ol {
     background:
         linear-gradient(
             135deg,
-            rgba(255, 255, 255, 0.389),
-            rgba(255, 255, 255, 0.344)
+            rgba(255, 255, 255, 0.18),
+            rgba(255, 255, 255, 0.04)
         );
 
     z-index: -1;
@@ -1006,74 +1006,6 @@ ol {
 	top: 35%;
 }
 
-/*---------------------
-  Latest Blog
------------------------*/
-
-.latest {
-	padding-top: 80px;
-}
-
-.latest__blog__item {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 2px;
-	padding: 40px 35px 40px 30px;
-	-webkit-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
-	margin-bottom: 50px;
-}
-
-.latest__blog__item:hover {
-	-webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.latest__blog__item:hover h5 a {
-	color: #88C417;
-	text-decoration: underline;
-}
-
-.latest__blog__item h5 {
-	margin-bottom: 45px;
-}
-
-.latest__blog__item h5 a {
-	font-size: 20px;
-	color: #1a3048;
-	font-weight: 700;
-	-webkit-transition: all, 0.2s;
-	-o-transition: all, 0.2s;
-	transition: all, 0.2s;
-}
-
-.latest__blog__item p {
-	line-height: 23px;
-	margin-bottom: 25px;
-}
-
-.latest__blog__author .latest__blog__author__pic {
-	float: left;
-	margin-right: 15px;
-}
-
-.latest__blog__author .latest__blog__author__text {
-	overflow: hidden;
-	padding-top: 5px;
-}
-
-.latest__blog__author .latest__blog__author__text h6 {
-	color: #88C417;
-	font-size: 15px;
-	font-weight: 700;
-	letter-spacing: 1px;
-}
-
-.latest__blog__author .latest__blog__author__text span {
-	font-size: 12px;
-	color: #777C81;
-	letter-spacing: 1px;
-}
 
 /*---------------------
   Contact Widget
