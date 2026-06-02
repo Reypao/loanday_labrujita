@@ -302,7 +302,7 @@
                         <div class="services__item__text">
                             <h4><span>01.</span> Personal Loan</h4>
                             <p>Fast and simple personal loans designed to help you cover your needs with confidence.</p>
-                            <a href="#contact">Find Out More</a>
+                            <a href="#" class="open-service-modal" data-service="personal">Find Out More</a>
                         </div>
                     </div>
                 </div>
@@ -315,7 +315,7 @@
                         <div class="services__item__text">
                             <h4><span>02.</span> Business Loan</h4>
                             <p>Financial support for small businesses and entrepreneurs who want to keep growing.</p>
-                            <a href="#contact">Find Out More</a>
+                            <a href="#" class="open-service-modal" data-service="business">Find Out More</a>
                         </div>
                     </div>
                 </div>
@@ -328,7 +328,7 @@
                         <div class="services__item__text">
                             <h4><span>03.</span> Emergency Loan</h4>
                             <p>Quick financial help when unexpected expenses appear and you need support fast.</p>
-                            <a href="#contact">Find Out More</a>
+                            <a href="#" class="open-service-modal" data-service="emergency">Find Out More</a>
                         </div>
                     </div>
                 </div>
@@ -672,6 +672,46 @@
     </div>
     <!-- Search End -->
 
+    <!-- Service Detail Modal Begin -->
+    <div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="serviceModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content service-modal-content">
+
+                <div class="modal-header service-modal-header">
+                    <h4 class="modal-title" id="serviceModalTitle">Service Title</h4>
+                    <button type="button" class="close service-modal-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body service-modal-body">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img id="serviceModalImage" src="" alt="" class="service-modal-img">
+                        </div>
+
+                        <div class="col-lg-7">
+                            <h5 id="serviceModalSubtitle"></h5>
+                            <p id="serviceModalDescription"></p>
+
+                            <div class="service-modal-benefits">
+                                <h6>What this service includes:</h6>
+                                <ul id="serviceModalBenefits"></ul>
+                            </div>
+
+                            <a href="#contact" class="primary-btn service-modal-btn" data-dismiss="modal">
+                                Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service Detail Modal End -->
+
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -682,6 +722,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
