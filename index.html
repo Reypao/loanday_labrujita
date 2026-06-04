@@ -143,32 +143,41 @@
                 <div class="col-lg-6 offset-lg-1">
                     <div class="hero__form">
                         <h3>How much do you need</h3>
-                        <form action="#">
+                        <form id="heroLoanForm">
                             <div class="input-list">
                                 <div class="input-list-item">
                                     <p>Amount of money ($):</p>
-                                    <input type="text">
+                                    <input type="text" name="amount" required>
                                 </div>
                                 <div class="input-list-item">
                                     <p>How long for (day):</p>
-                                    <input type="text">
+                                    <input type="text" name="days" required>
                                 </div>
                             </div>
                             <div class="input-full-width">
                                 <p>Repayment:</p>
-                                <input type="text">
+                                <input type="text" name="repayment">
                             </div>
                             <div class="input-list last">
                                 <div class="input-list-item">
                                     <p>Name:</p>
-                                    <input type="text">
+                                    <input type="text" name="name" required>
                                 </div>
                                 <div class="input-list-item">
                                     <p>Phone:</p>
-                                    <input type="text">
+                                    <input type="text" name="phone" required>
                                 </div>
                             </div>
+                            <div class="input-full-width">
+                                <p>Email:</p>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="input-full-width">
+                                <p>Message:</p>
+                                <input type="text" name="message" placeholder="Tell us how much you need..">
+                            </div>
                             <button type="submit" class="site-btn">Get Your Loan Now!</button>
+                            <p id="heroFormMessage"></p>
                         </form>
                     </div>
                 </div>
@@ -486,7 +495,7 @@
                     <div class="counter__item">
                         <img src="img/counter/counter-3.png" alt="">
                         <div class="counter__number">
-                            <h2 class="counter-add">90</h2>
+                            <h2 class="counter-add">2</h2>
                             <span>+</span>
                         </div>
                         <p>Office National Partners</p>
@@ -496,7 +505,7 @@
                     <div class="counter__item">
                         <img src="img/counter/counter-4.png" alt="">
                         <div class="counter__number">
-                            <h2 class="counter-add">70</h2>
+                            <h2 class="counter-add">2</h2>
                             <span>+</span>
                         </div>
                         <p>Award Certificate</p>
@@ -723,6 +732,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/apply.js"></script>
 </body>
 
 </html>

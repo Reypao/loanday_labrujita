@@ -1048,7 +1048,13 @@ ol {
 -----------------------*/
 
 .footer {
-	background: #182143;
+	background-image: linear-gradient(
+		rgba(85, 25, 128, 0.88),rgba(89, 24, 113, 0.88)
+	),url("../img/choose/footer-bg.jpg");
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	padding-top: 75px;
 }
 
