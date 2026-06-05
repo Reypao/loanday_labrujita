@@ -76,9 +76,9 @@ h6 {
 }
 
 p {
-	font-size: 15px;
+	font-size: 20px;
 	font-family: "Lato", sans-serif;
-	color: #5c5c5c;
+	color: #754310;
 	font-weight: 400;
 	line-height: 25px;
 	margin: 0 0 15px 0;
@@ -431,7 +431,9 @@ ol {
 .header__nav {
 	text-align: right;
 	padding: 38px 0 33px;
+
 }
+
 
 .header__menu {
 	display: inline-block;
@@ -513,16 +515,6 @@ ol {
 	-webkit-transition: all, 0.5s;
 	-o-transition: all, 0.5s;
 	transition: all, 0.5s;
-}
-
-.header__search {
-	display: inline-block;
-}
-
-.header__search i {
-	font-size: 18px;
-	color: #323232;
-	cursor: pointer;
 }
 
 .offcanvas-menu-wrapper {
