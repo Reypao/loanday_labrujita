@@ -78,10 +78,11 @@ h6 {
 p {
 	font-size: 20px;
 	font-family: "Lato", sans-serif;
-	color: #754310;
+	color: #d3cbc2;
 	font-weight: 400;
 	line-height: 25px;
 	margin: 0 0 15px 0;
+	text-shadow: rgb(87, 89, 83);
 }
 
 img {
@@ -629,7 +630,7 @@ ol {
     padding: 18px;
     border-radius: 8px;
 
-    background: rgba(34, 48, 96, 0.85);
+    background: rgba(144, 35, 149, 0.85);
     color: #fff;
 
     font-size: 18px;
@@ -2819,7 +2820,7 @@ ol {
 
 @media only screen and (min-width: 1200px) {
 	.container {
-		max-width: 1170px;
+		max-width: 1100px;
 	}
 }
 
