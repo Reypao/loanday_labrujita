@@ -72,9 +72,10 @@
         margin: 0,
         items: 3,
         dots: true,
-        smartSpeed: 1200,
+        smartSpeed: 800,
         autoHeight: false,
-        autoplay: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
         responsive: {
             992: {
                 items: 3
